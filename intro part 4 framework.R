@@ -58,6 +58,8 @@ survivalsummaries <- titanic %>%
 
 
 
+
+
 ### Challenge 2: Lines and regressions
 
 # 1. Let's have a look at average fare across age brackets.
@@ -76,30 +78,44 @@ countdown(minutes = 10)
 
 # other types of plots
 
+# histograms
+
 # multiple panels with facets
 
+# boxplots
+
+
 
 ###
-# Challenge 3: Putting it all together
+# Challenge 3: Looking at data distributions
 
-# The final challenge of the course! Let’s put everything we’ve learned together and do some data analysis!
-#
-# Each group has been given a unique (and hopefully interesting) public dataset.
-#
-# For this challenge, work with your breakout team to:
-# i.   Decide on a research question to answer
-# ii.  Manipulate the dataset with summarise(), group_by(), mutate(), etc in order to answer your data question
-# iii. Create plot(s)  to illustrate your findings
-# iv.  Present your findings to the whole group!
+# Let's create some exploratory figures around titanic passenger age
 
-countdown(minutes = 30)
+# First, create a histogram of passenger ages using geom_histogram. What might be a good binwidth for this distribution?
+
+# let's look at this in a class dependent manner. Add a facet_wrap layer to visualise each class seperately
+
+# Now let's have a look at a more condensed visualisation by creating boxplots for the age distribution within each class. You can do this in a single panel or include facets for this one!
+
+
+countdown(minutes = 10)
 ###
+
+# making things pretty
+
+# titles and labels
+
+# legend labels
+
+# exporting graphs
 
 # useful ggplot code resources
 
 # http://www.sthda.com/english/wiki/be-awesome-in-ggplot2-a-practical-guide-to-be-highly-effective-r-software-and-data-visualization#graphical-parameters
 
 # https://r-graph-gallery.com/
+
+
 
 
 
