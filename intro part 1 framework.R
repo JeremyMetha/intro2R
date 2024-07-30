@@ -14,7 +14,7 @@ setwd() # first, let's decide where our r stuf should end up.
 #   32*19 + 123,
 #   what do you get?
 
-#   b) Run the following in a SCRIPT: 11*34 + log(10)
+#   b) Run the following in a SCRIPT: 11*34 + log(10
 #   What happens? Do you get a value? Error? Warning?
 #   Can you fix it?
 #   c) Which one is larger, cos(10) or sin(10)? Can you write an
