@@ -42,7 +42,7 @@ as.character()
 
 # Hierarchy:   logical -> integer -> numeric -> complex -> character
 
-# Which of these coercion work? What do they produce?
+# Which of these coercion work? What do they produce? Why might this be the case?
 as.numeric(FALSE)
 as.logical(-2)
 as.integer(4.9)
