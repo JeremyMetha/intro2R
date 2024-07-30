@@ -11,7 +11,18 @@ rm(list = ls())
 
 # why doubles?
 
-# complex - complex numbers
+# they take up double the memory!
+object.size(as.integer(1:1000))
+object.size(as.numeric(1:1000))
+
+# but can store much larger values
+# the largest possible integer value...
+.Machine$integer.max
+
+# is much smaller than the largest possible double
+.Machine$double.xmax
+
+> # complex - complex numbers
 
 
 # characters/strings - everything non-numeric
