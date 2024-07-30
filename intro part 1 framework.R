@@ -54,22 +54,25 @@ setwd() # first, let's decide where our r stuf should end up.
 #####
 # Challenge 3: Variables and Storing Data
 
-#   a) Try assigning some variables! Which of the following work as names?
+#   a) Try assigning some variables to these names. Which of the following work as names?
 # min_height
 # _age
 # .mass
 # MaxLength
 # maxLength
-# widths2
+# 2widths
 
 #   b) What will be the value of each variable below after each step?
-# height = 181.2
-# weight = 85
-# height = height ^2
-# weight = sqrt(weight) + height/2
+# height <- 181.2
+# weight <- 85
+# height <- height ^2
+# weight <- sqrt(weight) + height/2
 #####
 
 # managing your environment
+
+
+
 
 # vectors
 
