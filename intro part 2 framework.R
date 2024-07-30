@@ -49,7 +49,7 @@ as.integer(4.9)
 as.character(TRUE)
 as.integer("eleven")
 as.integer("11")
-as.integer(as.logical("TRUE"))
+as.integer("TRUE")
 
 countdown(minutes = 5)
 ###
