@@ -7,18 +7,18 @@ titanic <- read_csv("https://goo.gl/4Gqsnz")
 
 # looking at a dataset
 
-
-# cleaning our data
-
-
 # data manipulation
+
+## select
+## filter
+## mutate
+## group_by
+## summarise
+
 
 # select
 
 # filter
-
-
-
 
 # filter conditions
 # == equality
@@ -31,6 +31,8 @@ titanic <- read_csv("https://goo.gl/4Gqsnz")
 # & match both conditions
 # | match either condition
 
+# the pipe! %>%
+
 ### Challenge 1: Filter and Select
 
 # Produce dataframes that contain only:
@@ -42,7 +44,7 @@ titanic <- read_csv("https://goo.gl/4Gqsnz")
 
 # iv. (Advanced) both passengers from  part i. and ii.
 
-countdown(minutes = 8)
+countdown(minutes = 7)
 ###
 
 # cleaning data - using filter and select
@@ -53,7 +55,9 @@ countdown(minutes = 8)
 
 # changing columns
 
-# a kind of filter
+# a different kind of filter
+
+# more than two groups? case_when
 
 ### Challenge 2: Mutate
 
