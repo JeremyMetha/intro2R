@@ -38,7 +38,7 @@ countdown(minutes = 7)
 
 # lines
 
-# throwback to last week - some dplyr tools
+# throwback to last session - some dplyr tools
 
 survivalsummaries <- titanic %>%
   group_by(Pclass) %>% # using Pclass as a grouping variable
@@ -95,7 +95,8 @@ countdown(minutes = 10)
 
 # let's look at this in a class dependent manner. Add a facet_wrap layer to visualise each class seperately
 
-# Now let's have a look at a more condensed visualisation by creating boxplots for the age distribution within each class. You can do this in a single panel or include facets for this one!
+# Now let's have a look at a more condensed visualisation by creating boxplots for the age distribution within each class. 
+# You can do this in a single panel or include facets for this one!
 
 
 countdown(minutes = 10)
