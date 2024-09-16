@@ -99,20 +99,23 @@ countdown(minutes = 5)
 
 # dataframes
 
-# importing dataframes
-trump <- read.csv("https://go.unimelb.edu.au/tt3r", stringsAsFactors=FALSE)
-
 # accesssing and subsetting dataframes
 
 #creating dataframes
-# here are some cats!
+# here's some infomration on the neighbourhood cats!
 name <- c("Otis", "Luna", "Nami", "Garfield")
 colour <- c("black", "white", "tabby", "ginger")
-weight <- c(4.5, 3.5, 2.5, 2)
+weight <- c(4.5, 3.5, 2.8, 22)
 hates_mondays <- c(FALSE, FALSE, FALSE, TRUE)
 
 # let's group them into a dataframe
 cats <- data.frame(name, colour, weight, hates_mondays)
+
+
+# importing dataframes
+trump <- read.csv("https://go.unimelb.edu.au/tt3r", stringsAsFactors=FALSE)
+
+
 
 
 
