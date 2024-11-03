@@ -1,6 +1,6 @@
 # setting up
 
-setwd() # first, let's decide where our r stuf should end up.
+setwd() # first, let's decide where our r stuff should end up.
 
 
 # using r as a calculator
