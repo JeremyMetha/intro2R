@@ -7,6 +7,9 @@ setwd() # first, let's decide where our r stuf should end up.
 
 # comparisons
 
+# troubleshooting 101!
+
+
 #####
 # Challenge 1: Basic Driving
 
