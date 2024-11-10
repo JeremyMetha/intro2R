@@ -2,6 +2,9 @@ setwd("~/intro to r")
 rm(list = ls())
 
 # data types
+
+# what type is my data?
+
 # logicals - true or false
 
 # integers
