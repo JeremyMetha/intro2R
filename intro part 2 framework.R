@@ -91,7 +91,8 @@ countdown(minutes = 10)
 # Create a named list called winter with the following elements:
 #   A logical named too_damn_cold with value TRUE
 #   A vector named better.temperatures with the values 24, 25 and 26
-#   Change the third better temperature to 30 (that is, change 26 to 30) by reassigning it
+#   Change the third better temperature to 30 (that is, change 26 to 30) by reassigning it. 
+#     There are quite a few ways to do thisreassignment! Try to find at least 2.
 
 countdown(minutes = 5)
 ###
