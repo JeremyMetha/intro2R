@@ -99,6 +99,9 @@ countdown(minutes = 5)
 
 # dataframes
 
+# importing dataframes
+titanic <- read.csv("https://goo.gl/4Gqsnz")
+
 # accesssing and subsetting dataframes
 
 #creating dataframes
@@ -112,8 +115,8 @@ hates_mondays <- c(FALSE, FALSE, FALSE, TRUE)
 cats <- data.frame(name, colour, weight, hates_mondays)
 
 
-# importing dataframes
-trump <- read.csv("https://go.unimelb.edu.au/tt3r", stringsAsFactors=FALSE)
+
+
 
 
 
