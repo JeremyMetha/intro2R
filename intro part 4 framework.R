@@ -41,8 +41,8 @@ countdown(minutes = 7)
 # throwback to last session - some dplyr tools
 
 survivalsummaries <- titanic %>%
-  group_by() %>% 
-  summarise(meanSurvival = mean(Survived), # create summary data for each class survival summary data for survival rates
+  group_by() %>% # create summary data for each class 
+  summarise(meanSurvival = mean(Survived), # survival summary data for survival rates
             sdSurvival = sd(Survived),
             count = n(),
             SEMsurvival = sdSurvival/sqrt(count))
