@@ -36,6 +36,7 @@ unique() # for looping over unique values in a dataframe column
 
 # 2.2. construct loops to print the times tables from 1*1 to 12*12
 
+# 2.3. (advanced) alter your code from 2.2 to instead construct a 12 x 12 dataframe containing the times table values
 
 
 # conditionals
