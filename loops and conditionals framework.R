@@ -11,11 +11,7 @@ colnames() # for looping over columns of a dataframe
 unique() # for looping over unique values in a dataframe column
 
 
-for (i in colnames(trees)) {
-  print(i)
-  print(unique(trees[[i]]))
 
-}
 
 
 
