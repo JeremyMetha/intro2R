@@ -106,8 +106,6 @@ countdown(minutes = 10)
 
 # titles and labels
 
-# legend labels
-
 # exporting graphs
 
 # useful ggplot code resources
