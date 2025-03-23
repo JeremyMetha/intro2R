@@ -6,7 +6,7 @@ rm(list = ls())
 
 # for loop
 
-# some useful indexing functions
+# some useful indexing functions for dealing with dataframes
 colnames() # for looping over columns of a dataframe
 unique() # for looping over unique values in a dataframe column
 
@@ -16,14 +16,12 @@ unique() # for looping over unique values in a dataframe column
 
 
 ### challenge 1:
-# The Fibonacci sequence is an interesting mathematical series where each number is the sum of the two preceeding numbers, for example, 0, 1, 1, 2, 3, 5, 8...
+# 1.1 Bart Simpson is in trouble and writing lines on the board. Construct a loop that will print the statement 
+# "I will not copy and paste lines of code that could be a loop or function instead." 100 times to the console. 
 
-# 1. write some code using a for loop that prints the first 20 digits of the Fibonacci sequence in the console.
-# hint: you may want to initialise the first 2 steps (0, 1) as values outside of the loop
+# 1.2 Modify the Fibonacci sequence loop example to store these values in a vector instead of printing them to the console.
 
-# 2. modify the loop to store these values in a list instead
-
-# 3. create a for loop to print the column name and number of unique values in each column of the iris dataframe
+# 1.3 create a for loop to print the column name and number of unique values in each column of the iris dataframe
 
 
 # while loop
@@ -32,7 +30,7 @@ unique() # for looping over unique values in a dataframe column
 
 ### challenge 2:
 
-# 2.1. modify the loop from challenge 1.1 to print all fibonacchi numbers less than 50
+# 2.1. modify the Fibonacci example loop to print all fibonacchi numbers less than 50
 
 # 2.2. construct loops to print the times tables from 1*1 to 12*12
 
@@ -43,9 +41,9 @@ unique() # for looping over unique values in a dataframe column
 
 ### challenge 3:
 
-# 3.1. modify the loop created in challenge 2.1 to only print the even Fibonacci numbers
+# 3.1. modify the Fibonacci example loop to only print the even Fibonacci numbers less than 50
 
-# 3.2 in addition to even Fibonacci numbers, now print odd multiples of 3 too
+# 3.2 in addition to even Fibonacci numbers, now also print odd multiples of 3 too
 
 
 # functions
