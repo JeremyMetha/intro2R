@@ -1,0 +1,152 @@
+---
+title: "R Markdown Session"
+author: "Jeremy Metha"
+date: "`r Sys.Date()`"
+output: html_document
+params:
+  year: "2007"
+  continent: "Asia"
+
+
+---
+
+## This is a section heading
+
+### this can be a subsection
+
+#### layers as we want
+
+In general, you can write whatever you want
+
+leave a line gap between paragraphs  
+because a single in break will not suffice
+
+new lines can be created  
+you need to leave at least 2 spaces at the end of a line for it to behave properly
+
+### adding emphasis
+
+a single set of stars around a word give *italics*  
+a double set gives **bold**  
+and a triple set gives ***both***
+
+`back ticks will give you a code font`
+
+### lists
+
+  1. thing one
+  2. thing 2
+  3. thing 3
+  
+- non-numbered list
+- other thing in list
+  - sub list
+  - sub list
+    - sub sub list
+  
+### block quotes
+
+> for extreme emphasis
+>
+>> they can be ***nested***
+
+maths in dollar signs
+$e = mc^2$
+
+<https://www.google.com>
+
+[search by clicking here](www.google.com)
+
+## Challenge 1: Markdown Syntax
+
+Throughout this workshop we're going to be generating a report using the gapminder dataset!
+
+1. Install and load the `gapminder` package with 
+
+> `install.packages("gapminder")` and `library(gapminder)` 
+
+2. Create a new rmarkdown document
+
+
+3. Add a paragraph containing a list describing the columns of the `gapminder` dataframe
+  * `help("gapminder")` contains all the information you need
+  
+4. Add a *link* that will take people to the gapminder source page when clicked
+  * https://gapminder.org/data/ is where you should be shooting for
+
+
+## coding in markdown
+
+```{r, message=FALSE, include =TRUE, echo =FALSE}
+library(gapminder)
+library(tidyverse)
+df <- gapminder
+
+df
+
+```
+
+This report contains data from the years: `r unique(df$year)`.
+
+
+
+1. Add a code chunk to set up your markdown document - this should include library calls for the packages you want to use in your analyses and the dataset you're going to be using. Do we need to see this code in the final knitted document? Choose a chunk option to reflect this choice
+
+2. Add some inline code that will show what countries are included in this dataset
+
+
+## data visualisation
+
+
+```{r, echo=FALSE, message=FALSE, results='asis'}
+
+
+pop_summary <- df %>% 
+  group_by(continent, year) %>% 
+  summarise(meanPopulation = mean(pop))
+
+ggplot(pop_summary, aes(x = year, y = meanPopulation, colour = continent))+
+  geom_line()+
+  geom_point()
+cat("\n\n")
+cat("text ")
+cat("\n\n")
+
+ggplot(pop_summary, aes(x = year, y = meanPopulation, colour = continent))+
+  geom_line()+
+  geom_point()
+
+
+```
+### tables
+
+```{r, echo = FALSE}
+knitr::kable(pop_summary)
+library(broom)
+pop_model <- lm(pop~year, data = df)
+knitr::kable(tidy(summary(pop_model)))
+
+```
+
+
+## params arguments
+
+
+
+## Challenge 4: Iteration and customisation of reports
+
+
+1. Create a copy of your markdown document and alter it to use params arguments, so that the report can be generated for any combination of year and continent
+
+
+
+
+
+## Challenge 5: Different markdown formats!
+
+* Explore some of the different markdown output formats and change your report to generate:
+  1. a `pdf_document`
+  2. a `word_document`
+  3. a `powerpoint_presentation`
+
+
