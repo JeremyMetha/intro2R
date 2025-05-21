@@ -144,12 +144,12 @@ countdown(minutes = 10)
 ###
 
 # other types of plots
-ggplot(data = titanic, aes(x=Age, fill = as.character(Pclass))) +
+ggplot(data = titanic, aes(x=Fare, fill = as.character(Pclass))) +
   geom_histogram(position = "dodge")
 
 
 # multiple panels with facets
-ggplot(data = titanic, aes(x=Age, fill = as.character(Pclass))) +
+ggplot(data = titanic, aes(x=Fare, fill = as.character(Pclass))) +
   geom_histogram(position = "dodge")+
   facet_wrap(Sex~Pclass) + xlab("x label") + ylab("people")+
   ggtitle("cool graph")
