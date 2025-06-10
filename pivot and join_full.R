@@ -118,26 +118,20 @@ table4b_long %>%
 
 ####
 
-### 2.4 Complex Pivoting: The `who` Dataset (10 mins)
+### 2.4 Unite and separate
 
-# Sometimes many columns need pivoting, representing combined variables.
-# Example: The `who` dataset (from `tidyr`, loaded with `tidyverse`). Tuberculosis counts.
-glimpse(who)
-# Columns like `new_sp_m014` combine diagnosis method, gender, and age. It's very wide!
+# As well as pivoting tables, unite and separate can be useful to change the structure of a dataset
 
-# We can use `pivot_longer` to gather all these count columns.
-# Using `tidyselect` helpers like `:` is useful here.
-who_long_simple <- who %>%
-  pivot_longer(
-    cols = new_sp_m014:newrel_f65, # Select the range of columns to pivot
-    names_to = "key",             # Store the complex column name (e.g., "new_sp_m014")
-    values_to = "cases",          # Store the count
-    values_drop_na = TRUE        # Optional: remove rows where the case count was NA
-  )
+# table 3 contains rate as a variable, being a combination of rate and population, 
+# we can split that up by using the separate() function
 
-glimpse(who_long_simple)
-# Note: The 'key' column still contains combined info. Further steps like `tidyr::separate`
-# could split it, but the pivot itself is the focus here.
+new_table_3 <- table3 %>%
+  separate(rate, col = c("cases", "population"), sep = "/")
+
+# let's say we want to return table 3 back to it's original form, we can do this using unite()
+
+old_table_3 <- new_table_3 %>% 
+  unite(col = "rate", cases, population, sep = "/")
 
 ####
 # Challenge 1c: Pivoting the `who` dataset
