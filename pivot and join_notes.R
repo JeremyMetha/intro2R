@@ -9,7 +9,17 @@ library(nycflights13) # install this if you don't have it!
 
   ## Pivoting Data
 
-  ###
+  ### Problem: Data is not always tidy!
+  # Here are a few ways of representing the same tuberculosis incidence data from the WHO
+table1
+table2
+table3
+table4a
+table4b
+table5
+
+  # Fortunately, this is (usually) a relatively easy thing to fix with some combination of mutate, unite, 
+  # separate and the pivot_ functions!
 
   ### `pivot_longer()`: Making Data Longer
 
@@ -18,7 +28,7 @@ library(nycflights13) # install this if you don't have it!
   # Challenge 1a: Using `pivot_longer`
 
   # The dataset `table4b` contains population data in a wide format.
-  # table4b # uncomment to view
+   table4b
 
   # Use `pivot_longer` to reshape `table4b` into a long format.
   # - Gather the `1999` and `2000` columns.
@@ -49,14 +59,9 @@ library(nycflights13) # install this if you don't have it!
 
 
   ####
-  # Challenge 1c: Pivoting the `who` dataset
+  # Challenge 1c: Unite and Separate
 
-  # Use `pivot_longer` on the `who` dataset.
-  # - Gather all columns from `new_sp_m014` through `newrel_f65`.
-  # - Name the new column containing these original names `diagnosis_info`.
-  # - Name the new column containing the counts `count`.
-  # - Use the argument `values_drop_na = TRUE` to remove rows where the count was `NA`.
-  # Store the result in a variable called `who_long` and display its structure using `glimpse()`.
+  # Use unite and separate to reshape table 5 to look more like table 1. 
 
 
 
