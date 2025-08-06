@@ -1,6 +1,3 @@
-# setting up
-
-setwd() # first, let's decide where our r stuff should end up.
 
 
 # using r as a calculator
@@ -100,3 +97,8 @@ setwd() # first, let's decide where our r stuff should end up.
 # Install the tidyverse package onto your machines, then check if it's there and behaving using the library() function.
 
 #####
+
+# saving and managing directories 
+getwd() # show our current directory
+setwd() # first, let's decide where our r stuff should end up.
+
