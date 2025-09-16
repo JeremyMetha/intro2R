@@ -62,7 +62,7 @@
 # maxLength
 # 2widths
 
-#   b) What will be the value of each variable below after each step?
+#   b) What will be the value of each variable below after each step? How does changing the order of runnign commands affect this?
 # height <- 181.2
 # weight <- 85
 # height <- height ^2
