@@ -19,7 +19,7 @@ unique() # for looping over unique values in a dataframe column
 # 1.1 Bart Simpson is in trouble and writing lines on the board. Construct a loop that will print the statement 
 # "I will not copy and paste lines of code that could be a loop or function instead." 100 times to the console. 
 
-# 1.2 Modify the Fibonacci sequence loop example to store these values in a vector instead of printing them to the console.
+# 1.2 Write a loop that prints the Fibonnaci sequence to the console (0, 1, 1, 2, 3, 5, 8...)
 
 # 1.3 create a for loop to print the column name and number of unique values in each column of the iris dataframe
 
