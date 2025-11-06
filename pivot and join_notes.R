@@ -136,18 +136,4 @@ table5
 
 
 
-   ### (Optional Bonus) Joining with Different Key Names
 
-
-   ####
-   # Challenge 2e: (Optional Bonus) Joining with multiple and different keys
-
-   # Let's add hourly temperature and wind speed from the `weather` table to the `flights` table.
-   # The join requires matching `year`, `month`, `day`, `hour`, and `origin`.
-   # 1. Create a new tibble called `weather_alt`. Start with the `weather` table, `select` only the columns `year`, `month`, `day`, `hour`, `origin`, `temp`, `wind_speed`. Then, `rename` the `origin` column to `airport_code`.
-   # 2. Perform a `left_join` starting with the `flights` table and joining `weather_alt`.
-   #    You *must* specify all 5 key columns correctly in the `by` argument. Make sure to handle the renamed key (`origin` in `flights` should match `airport_code` in `weather_alt`).
-   # 3. From the joined result, `select` the columns `year`, `month`, `day`, `hour`, `origin`, `temp`, `wind_speed` and display the first 6 rows using `head()`.
-
-
-   ####
