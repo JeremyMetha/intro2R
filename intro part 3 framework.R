@@ -4,6 +4,7 @@ library(tidyverse)
 
 # reading in data
 titanic <- read_csv("https://goo.gl/4Gqsnz")
+IMDb <- read_csv("https://go.unimelb.edu.au/p8is”)
 
 # looking at a dataset
 
