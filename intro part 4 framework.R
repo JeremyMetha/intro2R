@@ -4,7 +4,7 @@ setwd("~/intro to r")
 
 # reading in the data
 titanic <-  read_csv("https://goo.gl/4Gqsnz")
-
+IMDb <- read_csv("https://go.unimelb.edu.au/p8is")
 # cleaning the data
 titanic <- titanic %>%
   select(-Cabin) %>%
@@ -38,14 +38,7 @@ countdown(minutes = 7)
 
 # lines
 
-# throwback to last session - some dplyr tools
 
-survivalsummaries <- titanic %>%
-  group_by() %>% # create summary data for each class 
-  summarise(meanSurvival = mean(Survived), # survival summary data for survival rates
-            sdSurvival = sd(Survived),
-            count = n(),
-            SEMsurvival = sdSurvival/sqrt(count))
 
 # line graphs
 
@@ -61,6 +54,15 @@ survivalsummaries <- titanic %>%
 
 
 ### Challenge 2: Lines and regressions
+
+# throwback to last session - some dplyr tools to help with this one!
+
+survivalsummaries <- titanic %>%
+  group_by() %>% # create summary data for each class 
+  summarise(meanSurvival = mean(Survived), # survival summary data for survival rates
+            sdSurvival = sd(Survived),
+            count = n(),
+            SEMsurvival = sdSurvival/sqrt(count))
 
 # 1. Let's have a look at average fare across age brackets.
 # i.Firstly, let's add a new column to the titanic dataset with 10 year age brackets with mutate(AgeBracket = floor(Age/10))
